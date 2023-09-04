@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="Tugas1.css">
+</head>
+<body>
+    <header>
+        <h1>Icashier</h1>
+    </header>
+    <div class="container">
+        <div id="product-container">
+            <div class="list">
+                <!-- Produk 1 -->
+                <div class="product">
+                    <img src="Aset/produk1.jpg">
+                    <div class="productInfo">
+                        <div class="productName">Pisang</div>
+                        <div class="produkPrice">Rp.3000</div>
+                        <div class="productquantity">
+                            <button class="quantityButton" onclick="decrementQuantity(1)">-</button>
+                            <span id="quantity1">0</span>
+                            <button class="quantityButton" onclick="incrementQuantity(1)">+</button>
+                        </div>
+                        <button class="addToCart" onclick="addToCart('Pisang', 3000, 1)">Add To Cart</button>
+                    </div>
+                </div>
+    
+                <!-- Produk 2 -->
+                <div class="product">
+                    <img src="Aset/produk2.jpg">
+                    <div class="productInfo">
+                        <div class="productName">Nanas</div>
+                        <div class="produkPrice">Rp.18000</div>
+                        <div class="productquantity">
+                            <button class="quantityButton" onclick="decrementQuantity(2)">-</button>
+                            <span id="quantity2">0</span>
+                            <button class="quantityButton" onclick="incrementQuantity(2)">+</button>
+                        </div>
+                        <button class="addToCart" onclick="addToCart('Nanas', 18000, 2)">Add To Cart</button>
+                    </div>
+                </div>
+    
+                <!-- Produk 3, dan seterusnya -->
+                <!-- ... -->
+                <div class="product">
+                    <img src="Aset/produk3.jpg">
+                    <div class="productInfo">
+                        <div class="productName">Kiwi</div>
+                        <div class="produkPrice">Rp.12000</div>
+                        <div class="productquantity">
+                            <button class="quantityButton" onclick="decrementQuantity(3)">-</button>
+                            <span id="quantity3">0</span>
+                            <button class="quantityButton" onclick="incrementQuantity(3)">+</button>
+                        </div>
+                        <button class="addToCart" onclick="addToCart('Kiwi', 12000, 3)">Add To Cart</button>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img src="Aset/produk4.jpg">
+                    <div class="productInfo">
+                        <div class="productName">Apel</div>
+                        <div class="produkPrice">Rp.4000</div>
+                        <div class="productquantity">
+                            <button class="quantityButton" onclick="decrementQuantity(4)">-</button>
+                            <span id="quantity4">0</span>
+                            <button class="quantityButton" onclick="incrementQuantity(4)">+</button>
+                        </div>
+                        <button class="addToCart" onclick="addToCart('Apel', 4000, 4)">Add To Cart</button>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img src="Aset/produk5.jpg">
+                    <div class="productInfo">
+                        <div class="productName">Pir</div>
+                        <div class="produkPrice">Rp.2500</div>
+                        <div class="productquantity">
+                            <button class="quantityButton" onclick="decrementQuantity(5)">-</button>
+                            <span id="quantity5">0</span>
+                            <button class="quantityButton" onclick="incrementQuantity(5)">+</button>
+                        </div>
+                        <button class="addToCart" onclick="addToCart('Pir', 2500, 5)">Add To Cart</button>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img src="Aset/produk6.jpg">
+                    <div class="productInfo">
+                        <div class="productName">Jahe</div>
+                        <div class="produkPrice">Rp.2000</div>
+                        <div class="productquantity">
+                            <button class="quantityButton" onclick="decrementQuantity(6)">-</button>
+                            <span id="quantity6">0</span>
+                            <button class="quantityButton" onclick="incrementQuantity(6)">+</button>
+                        </div>
+                        <button class="addToCart" onclick="addToCart('Jahe', 2000, 6)">Add To Cart</button>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div>
+            <div class="cart-title">
+                <h1>My cart</h1>
+            </div>
+            <div id="cart-container">
+
+                <!-- Isi keranjang akan ditampilkan di sini -->
+                <div class="cart-item">
+                    <img src="">
+                    <div class="cart-item-info">
+                        <div class="cart-item-name"></div>
+                        <div class="cart-item-price"></div>
+                        <div class="cart-item-quantity"></div>
+                        <div class="cart-item-total"></div>
+                    </div>
+                    <div class="cart-total">
+                        <div>Total Price : Rp0</div>
+                        <div>Tax : Rp0</div>
+                        <div>Total Payment : Rp0</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+
+    <script src="Tugas1.js"></script>
+</body>
+</html>

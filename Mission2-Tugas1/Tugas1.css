@@ -1,0 +1,135 @@
+body{
+    background-color: antiquewhite;
+    font-family: sans-serif;
+}
+header{
+    padding: 10px;
+    margin-left: 20px;
+}
+
+#product-container {
+    margin-top: -20px;
+    width: 70%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    margin-top: 10px;
+}
+
+.product{
+    text-align: center;
+    background-color: #DCE0E1;
+    padding: 20px;
+    box-shadow: 0 50px 50px #757676;
+    letter-spacing: 1px;
+}
+
+.product img{
+    width: 90%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.cart-title h1 {
+    margin-left: -25%;
+    margin-top: -60px;
+}
+
+#cart-container {
+    padding: 20px;
+    width: 100%;
+    margin-left: -25%;
+    box-sizing: border-box; 
+    background-color: #fff;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.productName {
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.produkPrice {
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+}
+
+.productquantity {
+    margin-top: 10px;
+}
+
+.quantityButton {
+    background-color: #0074D9;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 5px;
+}
+
+.addToCart {
+    background-color: #2ECC40;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.cart-item {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.cart-item-info {
+    flex-grow: 1;
+}
+
+.cart-item-name {
+    font-weight: bold;
+}
+
+.cart-item-price {
+    color: #333;
+}
+
+.cart-item-quantity {
+    font-size: 14px;
+}
+
+.cart-item-total {
+    font-weight: bold;
+}
+
